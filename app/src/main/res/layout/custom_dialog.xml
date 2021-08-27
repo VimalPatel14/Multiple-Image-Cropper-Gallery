@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/bgclr"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Resize Image!"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:clickable="true"
+            android:text="Custom"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/teal_200"
+            android:clickable="true"
+            android:text="Auto-Crop"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

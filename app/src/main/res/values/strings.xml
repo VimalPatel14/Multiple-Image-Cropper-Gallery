@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CusromGalleryWithCropper</string>
+
+    <string name="read_storage">Can we read your storage?</string>
+    <string name="storage_message">We need your permission to access your storage</string>
+    <string name="checkable">Checkable Options</string>
+    <string name="canceled">Canceled</string>
+    <string name="no_selected">Please select, first.</string>
+</resources>

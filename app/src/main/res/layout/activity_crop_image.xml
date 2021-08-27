@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CropImageActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        android:contentInsetStartWithNavigation="0dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white">
+
+        <ImageView
+            android:id="@+id/doneall"
+            android:layout_width="@dimen/album_dp_30"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/all"
+            app:tint="@color/white" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/toolbar">
+
+        <com.theartofdev.edmodo.cropper.CropImageView
+            android:id="@+id/CropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cropShowProgressBar="true" />
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/crop" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
